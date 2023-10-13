@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贪吃蛇game</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .connect {
+      margin: 0 auto;
+      border: 10px solid #000;
+      position: relative;
+    }
+
+    .food {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+    }
+
+    .snakeBody {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+    }
+
+    .max {
+      width: 100px;
+      height: 200px;
+      position: absolute;
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+</body>
+
+
+<script src="snake.js"></script>
+<script>
+  let map = new Map()
+  map.init()
+  let food = new Food(map)
+  food.init()
+  let snake = new Snake(map, food)
+  snake.init()
+</script>
+
+</html>
